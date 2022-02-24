@@ -1,0 +1,4 @@
+ D:\Desktop\MY\adda_vga\mif\t_s.BMP(0)
+
+00000000200071302260221034700000:/*D:\Desktop\MY\adda_vga\mif\t_s.BMP0*/
+

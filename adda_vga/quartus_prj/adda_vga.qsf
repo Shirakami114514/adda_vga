@@ -1,0 +1,100 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
+# Date created = 13:22:44  February 20, 2022
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		adda_vga_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE10F17C8
+set_global_assignment -name TOP_LEVEL_ENTITY adda_vga
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:22:44  FEBRUARY 20, 2022"
+set_global_assignment -name LAST_QUARTUS_VERSION "13.0 SP1"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
+set_global_assignment -name DEVICE_FILTER_PIN_COUNT 256
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_R1 -to ds
+set_location_assignment PIN_L11 -to oe
+set_location_assignment PIN_P15 -to i2c_scl
+set_location_assignment PIN_N14 -to i2c_sda
+set_location_assignment PIN_B1 -to shcp
+set_location_assignment PIN_K9 -to stcp
+set_location_assignment PIN_E1 -to sys_clk
+set_location_assignment PIN_M15 -to sys_rst_n
+set_location_assignment PIN_A5 -to rgb[15]
+set_location_assignment PIN_E6 -to rgb[14]
+set_location_assignment PIN_E7 -to rgb[13]
+set_location_assignment PIN_B8 -to rgb[12]
+set_location_assignment PIN_A8 -to rgb[11]
+set_location_assignment PIN_F8 -to rgb[10]
+set_location_assignment PIN_E8 -to rgb[9]
+set_location_assignment PIN_B7 -to rgb[8]
+set_location_assignment PIN_A7 -to rgb[7]
+set_location_assignment PIN_F7 -to rgb[6]
+set_location_assignment PIN_F6 -to rgb[5]
+set_location_assignment PIN_B6 -to rgb[4]
+set_location_assignment PIN_A6 -to rgb[3]
+set_location_assignment PIN_B5 -to rgb[2]
+set_location_assignment PIN_A2 -to rgb[1]
+set_location_assignment PIN_B4 -to rgb[0]
+set_location_assignment PIN_C2 -to hsync
+set_location_assignment PIN_D1 -to vsync
+set_location_assignment PIN_M2 -to key[0]
+set_location_assignment PIN_M1 -to key[1]
+set_location_assignment PIN_E15 -to key[2]
+set_global_assignment -name VERILOG_FILE ../rtl/i2c_adda/adda_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/i2c_adda/i2c_ctrl.v
+set_global_assignment -name QIP_FILE ipcore/clk_gen/clk_gen.qip
+set_global_assignment -name VERILOG_FILE ../rtl/adda_vga.v
+set_global_assignment -name VERILOG_FILE ../rtl/key/key_filter.v
+set_global_assignment -name VERILOG_FILE ../rtl/key/key_control.v
+set_global_assignment -name VERILOG_FILE ../rtl/seg/seg_dynamic.v
+set_global_assignment -name VERILOG_FILE ../rtl/seg/seg_595_dynamic.v
+set_global_assignment -name VERILOG_FILE ../rtl/seg/hc595_ctrl.v
+set_global_assignment -name VERILOG_FILE ../rtl/seg/bcd_8421.v
+set_global_assignment -name VERILOG_FILE ../rtl/vga/vga_wave_pic.v
+set_global_assignment -name VERILOG_FILE ../rtl/vga/vga_ctrl.v
+set_global_assignment -name QIP_FILE ipcore/rom_256x8.qip
+set_global_assignment -name QIP_FILE ipcore/ram_256x8.qip
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

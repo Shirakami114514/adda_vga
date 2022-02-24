@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="adda_vga">
+		<CBX_INST_ENTRY INSTANCE_NAME="|adda_vga|adda_ctrl:adda_ctrl_inst|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_ekm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|adda_vga|clk_gen:clk_gen_inst|altpll:altpll_component" CBX_FILE_NAME="clk_gen_altpll.v"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|adda_vga|vga_wave_pic:vga_wave_pic_inst|lpm_divide:Div0" CBX_FILE_NAME="lpm_divide_hhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|adda_vga|adda_ctrl:adda_ctrl_inst|ram_256x8:ram_256x8_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_e8k1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|adda_vga|adda_ctrl:adda_ctrl_inst|rom_256x8:rom_256x8_inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_ipa1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|adda_vga|vga_wave_pic:vga_wave_pic_inst|lpm_divide:Div1" CBX_FILE_NAME="lpm_divide_hhm.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|adda_vga|vga_wave_pic:vga_wave_pic_inst|lpm_divide:Mod0" CBX_FILE_NAME="lpm_divide_uam.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
